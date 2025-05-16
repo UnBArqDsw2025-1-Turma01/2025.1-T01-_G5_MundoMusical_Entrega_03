@@ -2,7 +2,7 @@
 
 **Código da Disciplina**: FGA0208<br>
 **Número do Grupo**: 05<br>
-**Entrega**: 02<br>
+**Entrega**: 03<br>
 
 
 ## 1.Alunos
@@ -94,51 +94,9 @@ O Mundo Musical é uma plataforma de aprendizado de teoria musical de forma gami
 
 Utilizando jogos símples e quizes, além de gráficos amigáveis, o aprendizado pelo Mundo Musical é mais divertido e menos intimidador do que formas tradicionais de aprender música. Sistemas de recompensa por prática diária e um elemento competitivo opcional incentivam o uso regular da plataforma para um melhor aprendizado.
 
-## 3. Screenshots da Segunda Entrega
-<center>
+## 3. Screenshots da Terceira Entrega
 
-**Figura 1** — Diagrama de Componentes
-
-![Diagrama de Componentes](/assets/componentes.png)
-
-**Fonte**: [Autores](/Modelagem/2.1.ModelagemEstatica.md#22-diagrama-de-componentes)
-
-
-**Figura 2** — Diagrama de Classes
-
-![Diagrama de Classes](/assets/classes.png)
-
-**Fonte**: [Autores](/Modelagem/2.1.ModelagemEstatica.md#32-diagrama-de-classes)
-
-
-**Figura 3** — Diagrama de Estados
-
-![Diagrama de Estados](/assets/estados.png)
-
-**Fonte**: [Autores](/Modelagem/2.2.ModelagemDinamica.md#3-diagrama-de-estados)
-
-
-**Figura 4** — Diagrama de Comunicação/Colaboração
-
-![Diagrama de Colaboração](/assets/colaboracao.png)
-
-**Fonte**: [Autores](/Modelagem/2.2.ModelagemDinamica.md#2-diagrama-de-comunicação)
-
-
-**Figura 5** — Diagrama de Casos de Uso
-
-![Diagrama de Casos de Uso](/assets/casos.png)
-
-**Fonte**: [Autores](/Modelagem/2.3.ModelagemOrganizacionalCasosDeUso.md#2-diagrama-de-casos-de-uso)
-
-
-**Figura 6** — Diagrama de Pacotes
-
-![Diagrama de Pacotes](/assets/pacotes.png)
-
-**Fonte**: [Autores](/Modelagem/2.3.ModelagemOrganizacionalCasosDeUso.md#3-diagrama-de-pacotes)
-
-</center>
+[SEÇÃO VAZIA]
 
 ## 4. Há algo a ser executado?
 
@@ -158,3 +116,4 @@ Utilizando jogos símples e quizes, além de gráficos amigáveis, o aprendizado
 | `1.2`  | 07/04/2025 | 10/04/2025      | Formatação                                      | [Laís Soares](https://github.com/Laisczt) | [Pedro Lucas Dourado](https://github.com/lucasdray) | Adicionado a matrícula dos alunos, reformulado a disposição dos alunos na tabela |
 | `1.3`  | 05/05/2025 |                 | Migração pra entrega 2                          | [Laís Soares](https://github.com/Laisczt) | - |  |
 | `1.4`  | 08/05/2025 |                 | screenshots para entrega 2                          | [Laís Soares](https://github.com/Laisczt) | - |  |
+| `1.5`  | 16/05/2025 |                 | Migração pra entrega 3                          | [Laís Soares](https://github.com/Laisczt) | - |  |
