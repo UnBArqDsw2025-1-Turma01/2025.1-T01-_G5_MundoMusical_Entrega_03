@@ -1,7 +1,7 @@
 - [Mundo Musical](/)
 
 - **Padrões de Projeto**
-  - 3. Desenho de Software (Padrões de Projeto)
+  - 3. [Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadreosDeProjeto.md)
     - [3.1. Padrões Criacionais](/PadroesDeProjeto/3.1.GoFsCriacionais.md)
     - [3.2. Padrões Estruturais](/PadroesDeProjeto/3.2.GoFsEstruturais.md)
     - [3.3. Padrões Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
