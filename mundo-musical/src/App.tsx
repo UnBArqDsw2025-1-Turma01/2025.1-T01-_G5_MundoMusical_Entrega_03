@@ -1,11 +1,12 @@
 import { Toaster } from 'sonner'
-import { Home } from './pages/Home'
+//import { Home } from './pages/Home'
+import { Licoes } from './pages/Licoes'
 
 function App() {
 
   return (
     <>
-      <Home />
+      <Licoes />
       <Toaster richColors position="top-right" />
     </>
   )
