@@ -1,25 +1,23 @@
 interface CorrecaoExercicio {
-    corrigir (nota) : boolean;
-
-    gerarFeedback(idFeedback, comentario) : Feedback | null;
+    corrigir (nota: Number) : boolean;
+    gerarFeedback(idFeedback: Number, comentario: String) : Feedback | null;
 }
 
 class ProxyExercicio implements CorrecaoExercicio{
     private exercicio: Exercicio;
     
-
-    constructor(exercicio : Exercicio){
+    constructor(exercicio : Exercicio) {
         this.exercicio = exercicio;
     }
 
-    corrigir(nota: any) : boolean {
-        if(this.checkarSessao()){
+    corrigir(nota: Number) : boolean {
+        if (this.checkarSessao()) {
             return this.exercicio.corrigir(nota);
         }
         return false;
     }
 
-    gerarFeedback(idFeedback, comentario) : Feedback | null{
+    gerarFeedback(idFeedback: Number, comentario: String) : Feedback | null{
         if(this.checkarSessao()){
             return this.exercicio.gerarFeedback(idFeedback, comentario);
         }
@@ -61,7 +59,7 @@ class Feedback {
     private comentario: String;
     private pontuacao: Number;
 
-    constructor(idFeedback, idExercicio, pontuacao, comentario){
+    constructor(idFeedback: Number, idExercicio: Number, pontuacao: Number, comentario: String){
         this.idFeedback = idFeedback;
         this.idExercicio = idExercicio;
         this.pontuacao = pontuacao;
