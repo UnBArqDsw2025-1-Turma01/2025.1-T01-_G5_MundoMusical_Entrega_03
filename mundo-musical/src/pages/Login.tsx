@@ -2,9 +2,16 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { toast } from 'sonner';
+import logo from '@/assets/images/logo.png'; // ✅ Ajuste o caminho se necessário
 
 const Input = React.forwardRef<HTMLInputElement, React.InputHTMLAttributes<HTMLInputElement>>(
-  (props, ref) => <input ref={ref} {...props} className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent" />
+  (props, ref) => (
+    <input
+      ref={ref}
+      {...props}
+      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+    />
+  )
 );
 Input.displayName = "Input";
 
@@ -19,14 +26,10 @@ export default function Login() {
     setIsLoading(true);
 
     try {
-      // Simulação de tempo de requisição (substitua por sua API real)
       await new Promise(resolve => setTimeout(resolve, 1500));
       
-      // Validação simples (substitua por sua lógica real)
       if (usuario === 'admin' && senha === 'admin') {
         toast.success('Login realizado com sucesso!');
-        
-        // Redireciona para a Home após 1 segundo
         setTimeout(() => navigate('/'), 1000);
       } else {
         toast.error('Credenciais inválidas!');
@@ -40,20 +43,14 @@ export default function Login() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex">
-      {/* Coluna Esquerda - Ilustração */}
-      <div className="hidden lg:flex flex-1 bg-gradient-to-br from-orange-50 to-orange-100 items-center justify-center p-12">
+      <div className="hidden lg:flex flex-1 bg-white items-center justify-center p-12">
         <div className="max-w-md text-center">
           <div className="mb-8">
-            <svg
-              width="120"
-              height="120"
-              viewBox="0 0 120 120"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="mx-auto text-orange-500"
-            >
-              {/* Seu SVG aqui (mantido igual ao anterior) */}
-            </svg>
+            <img 
+              src={logo} 
+              alt="Logo do site" 
+              className="mx-auto w-82 h-82 object-contain" 
+            />
           </div>
           <h2 className="text-2xl font-bold text-gray-800 mb-4">
             Aprenda, acompanhe seu progresso e interaja com outros usuários.
@@ -62,11 +59,10 @@ export default function Login() {
         </div>
       </div>
 
-      {/* Coluna Direita - Formulário */}
       <div className="flex-1 flex items-center justify-center p-6">
-        <div className="w-full max-w-md bg-white p-8 rounded-lg shadow-sm">
+        <div className="w-full max-w-md bg-white p-8 rounded-lg ">
           <div className="text-center mb-8">
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">Faça login na sua conta</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">Faça login na sua conta</h1>
             <p className="text-gray-600">Insira seus dados para acessar a sua conta.</p>
           </div>
 
