@@ -9,5 +9,6 @@
     - [3.5. Iniciativas Extras](/PadroesDeProjeto/3.5.IniciativasExtras/3.5.IniciativasExtras.md)
 
   - Atas de Reunião
-    - [dd/mm/2025](/PadroesDeProjeto/Reunioes/ataExemplo.md)
+    - [ata geral 22/05/2025](/PadroesDeProjeto/Reunioes/ata01.md)
+    - [Modelo de Ata](/PadroesDeProjeto/Reunioes/ataExemplo.md)
 
