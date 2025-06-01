@@ -7,6 +7,7 @@
     - [3.3. Padrões Comportamentais](/PadroesDeProjeto/3.3.GoFsComportamentais.md)
     - [3.4. Participações em Padroes](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras](/PadroesDeProjeto/3.5.IniciativasExtras/3.5.IniciativasExtras.md)
+      - [3.5.1 Metodologia](/PadroesDeProjeto/3.5.IniciativasExtras/metodologia.md)
 
   - Atas de Reunião
     - [ata geral 22/05/2025](/PadroesDeProjeto/Reunioes/ata01.md)
