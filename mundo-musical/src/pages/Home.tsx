@@ -1,11 +1,24 @@
-import { LessonView } from "@/components/lesson/LessonView";
-import { DailyReward } from "@/components/rewards/DailyRewards";
 import { Button } from "@/components/ui/button";
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useMemo, useState } from "react";
+import { DailyMissions } from "@/components/user/DailyMissions";
+import { UserProgress } from "@/components/user/UserProgress";
+import { DailyMissionManager } from "@/core/missions/DailyMissionManager";
+import { setupMissions } from "@/lib/setupMissions";
+import { TopicGrid } from "@/components/topic/TopicGrid";
+import type { Mission } from "@/core/missions/Mission";
 
 export const Home = () => {
   const navigate = useNavigate();
+  const [missions, setMissions] = useState<Mission[]>([]);
+  const manager = useMemo(() => new DailyMissionManager(missions), [missions]) 
+
+  useEffect(() => {
+    const newMissions = setupMissions();
+    setMissions(newMissions);
+    manager.setMissions(newMissions);
+  }, []);
 
   const handleLogout = () => {
     toast.success('Logout realizado com sucesso!');
@@ -26,8 +39,9 @@ export const Home = () => {
         </Button>
       </div>
 
-      <LessonView />
-      <DailyReward />
+      <UserProgress level={manager.getLevel()} xp={manager.getXp()} />
+      <DailyMissions missions={manager.getMissions()} />
+      <TopicGrid />
     </main>
   );
 }
