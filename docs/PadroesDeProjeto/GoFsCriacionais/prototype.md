@@ -78,8 +78,8 @@ console.log("Clone:", novoExercicio);
 Original: { titulo: 'Identifique o acorde', tipo: 'Audição', dificuldade: 'Média', conteudo: [...], clone: [Function: clone] }
 Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade: 'Fácil', conteudo: [...], clone: [Function: clone] }
 ```
+![Protótipo](../../../assets/prototype.jpeg)
 
-## Prints
 
 ## 10. Ferramentas Utilizadas
 
