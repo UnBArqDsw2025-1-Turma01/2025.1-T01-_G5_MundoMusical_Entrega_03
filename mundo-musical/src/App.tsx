@@ -1,19 +1,23 @@
-import { Routes, Route } from 'react-router-dom'
-import {Home} from './pages/Home'
-import Login from './pages/Login'
-import { Toaster } from 'sonner'
+import { Routes, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import Login from './pages/Login';
+import PrivateRoute from './components/PrivateRoute'; // importa o PrivateRoute
+import { Toaster } from 'sonner';
 
-function App() {
+export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* rota pública */}
         <Route path="/login" element={<Login />} />
-      </Routes>
 
+        {/* rotas protegidas - qualquer rota dentro do PrivateRoute */}
+        <Route element={<PrivateRoute />}>
+          <Route path="/*" element={<Home />} />
+          {/* aqui pode adicionar mais rotas protegidas, ex: <Route path="/dashboard" element={<Dashboard />} /> */}
+        </Route>
+      </Routes>
       <Toaster richColors position="top-right" />
     </>
-  )
+  );
 }
-
-export default App
