@@ -1,69 +1,81 @@
-import React from 'react';
-import { Lesson } from '@/core/lesson/Lesson';
-import { LessonModule } from '@/core/lesson/LessonModule';
-import { UserProgress } from '@/core/user/UserProgress';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
-import { CheckCircle2 } from 'lucide-react';
-import { toast } from 'sonner';
-import acordeMp3 from '@/assets/acorde.mp3';
+import { useState, useEffect } from "react";
+import { LessonModule } from "@/core/lesson/LessonModule";
+import type { LessonComponent } from "@/core/lesson/types";
+import { CheckCircle2, Circle } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
-export const LessonView = () => {
-  const module = new LessonModule('🎵 Módulo 1: Intervalos');
-  module.add(new Lesson('Intervalo de 3ª', 'Do primeiro ao terceiro grau, exemplo: C até E.'));
-  module.add(new Lesson('Intervalo de 5ª', 'Do primeiro ao quinto grau, exemplo: C até G.'));
+interface Props {
+  module: LessonModule;
+}
 
-  const handleComplete = () => {
-    UserProgress.getInstance().completeLesson();
+export const LessonModuleView = ({ module }: Props) => {
+  const [, forceUpdate] = useState(0);
 
-    toast.success('Módulo concluído!', {
-      description: 'Você ganhou uma recompensa por completar este módulo. 🎉',
-      duration: 4000,
-    });
-  };
+  useEffect(() => {
+    const trigger = () => forceUpdate(n => n + 1);
+    module.subscribe(trigger);
+    return () => module.unsubscribe(trigger);
+  }, [module]);
 
   return (
-    <Card className="mb-8 shadow-md border-2 border-muted rounded-2xl">
-      <CardContent className="p-6 space-y-5">
-        <div>
-          <h2 className="text-2xl font-bold mb-1">{module.getTitle()}</h2>
-          <p className="text-muted-foreground text-sm">
-            Pratique os intervalos musicais com exemplos simples.
-          </p>
-        </div>
-
-        <Separator />
-
-
-        <div className="w-full">
-          <audio
-            controls
-            src={acordeMp3}
-            className="w-full h-10 rounded-md border border-gray-300"
+    <Card className="mb-6">
+      <CardContent className="p-6">
+        <div className="flex justify-between items-center mb-4">
+          <h2 className="text-xl font-semibold flex items-center gap-2">
+            {module.isCompleted() ? (
+              <CheckCircle2 className="text-green-500" size={20} />
+            ) : (
+              <Circle className="text-muted-foreground" size={20} />
+            )}
+            {module.getTitle()}
+          </h2>
+          <Button
+            variant={module.isCompleted() ? "outline" : "default"}
+            onClick={() => module.toggleComplete()}
           >
-            Seu navegador não suporta o elemento de áudio.
-          </audio>
+            {module.isCompleted() ? "✅ Concluído" : "Concluir módulo"}
+          </Button>
         </div>
-
-        <Separator />
 
         <div className="space-y-3">
-          {module
-            .getContent()
-            .split('\n')
-            .map((line, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="text-green-500 mt-[3px]" size={18} />
-                <p className="text-base leading-relaxed">{line}</p>
-              </div>
-            ))}
+          {module.getChildren().map(lesson => (
+            <LessonView key={lesson.id} lesson={lesson} />
+          ))}
         </div>
-
-        <Button size="lg" className="w-full mt-4" onClick={handleComplete}>
-          ✅ Marcar como concluído
-        </Button>
       </CardContent>
     </Card>
+  );
+};
+
+const LessonView = ({ lesson }: { lesson: LessonComponent }) => {
+  const [, forceUpdate] = useState(0);
+
+  useEffect(() => {
+    const trigger = () => forceUpdate(n => n + 1);
+    lesson.subscribe(trigger);
+    return () => lesson.unsubscribe(trigger);
+  }, [lesson]);
+
+  return (
+    <div
+      className="flex items-center justify-between border rounded-md p-3 hover:bg-accent cursor-pointer"
+    >
+      <div className="flex items-center gap-2">
+        {lesson.isCompleted() ? (
+          <CheckCircle2 className="text-green-500" size={18} />
+        ) : (
+          <Circle className="text-muted-foreground" size={18} />
+        )}
+        <span className="text-base">{lesson.getTitle()}</span>
+      </div>
+      <Button 
+        variant="ghost" 
+        size="sm"
+        onClick={() => lesson.toggleComplete()}
+      >
+        {lesson.isCompleted() ? "Desmarcar" : "Concluir"}
+      </Button>
+    </div>
   );
 };

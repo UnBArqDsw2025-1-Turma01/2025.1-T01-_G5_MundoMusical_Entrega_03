@@ -42,13 +42,13 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 #### Interface original de teoria musical
 ```
 
-![Print da interface MusicTheoryAPI](./assets/print-music-theory-api.png)
+![Print da interface MusicTheoryAPI](../../assets//print-music-theory-api.png)
 
 ```markdown
 #### Interface original de treinamento rítmico
 ```
 
-![Print da interface RhythmTrainerAPI](./assets/print-rhythm-trainer-api.png)
+![Print da interface RhythmTrainerAPI](../../assets//print-rhythm-trainer-api.png)
 
 ---
 
@@ -58,13 +58,13 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 #### Adapter para teoria musical
 ```
 
-![Print do MusicTheoryAdapter](./assets/print-music-theory-adapter.png)
+![Print do MusicTheoryAdapter](../../assets//print-music-theory-adapter.png)
 
 ```markdown
 #### Adapter para treinamento rítmico
 ```
 
-![Print do RhythmTrainerAdapter](./assets/print-rhythm-trainer-adapter.png)
+![Print do RhythmTrainerAdapter](../../assets//print-rhythm-trainer-adapter.png)
 
 ---
 
@@ -72,7 +72,7 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 #### Interface unificada
 ```
 
-![Print da interface MusicExerciseInterface](./assets/print-music-exercise-interface.png)
+![Print da interface MusicExerciseInterface](../../assets//print-music-exercise-interface.png)
 
 ---
 
@@ -80,7 +80,7 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 #### Uso do Adapter no sistema
 ```
 
-![Print do uso do Adapter no LearningSystem](./assets/print-uso-adapter-learningsystem.png)
+![Print do uso do Adapter no LearningSystem](../../assets//print-uso-adapter-learningsystem.png)
 
 ---
 
@@ -90,7 +90,7 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 #### Tela da plataforma Mundo Musical
 ```
 
-![Print da tela da plataforma](././assets/print-tela-mundomusical.png)
+![Print da tela da plataforma](./../../assets//print-tela-mundomusical.png)
 
 ## Conclusão
 
