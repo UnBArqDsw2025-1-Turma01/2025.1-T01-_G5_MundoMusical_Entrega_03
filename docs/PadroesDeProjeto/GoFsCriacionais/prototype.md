@@ -52,7 +52,7 @@ A estrutura do padrão Prototype envolve três elementos principais:
 
 O padrão de projeto Prototype é uma solução eficiente e reutilizável para a criação de objetos complexos, permitindo que novas instâncias sejam geradas a partir de cópias de objetos já existentes. Ao reduzir o custo de criação e promover flexibilidade, esse padrão contribui para um código mais limpo e performático. No entanto, sua implementação exige atenção especial à clonagem de objetos, principalmente quando há estruturas internas complexas. Quando bem utilizado, o Prototype pode ser um poderoso aliado no desenvolvimento de sistemas escaláveis e bem estruturados.
 
-## 9.. Histórico de Versão
+## 9. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |

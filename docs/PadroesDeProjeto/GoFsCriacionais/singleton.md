@@ -42,7 +42,7 @@ A estrutura do padrão Prototype envolve três elementos principais:
 
 
 
-## 9.. Histórico de Versão
+## 9. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
