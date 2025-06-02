@@ -1,17 +1,19 @@
-import React, { StrictMode } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import App from './App'
 import Login from './pages/Login'
 import { Home } from './pages/Home'
+import { Topic } from './pages/Topic'
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />, // Rende o componente App que contém suas rotas
+    path: "*",
+    element: <App />,
     children: [
       { index: true, element: <Home /> },
       { path: "login", element: <Login /> },
+      { path: "topics/:id", element: <Topic />}
     ]
   }
 ])
