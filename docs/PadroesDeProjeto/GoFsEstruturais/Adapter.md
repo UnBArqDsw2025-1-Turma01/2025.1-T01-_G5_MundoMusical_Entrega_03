@@ -53,11 +53,11 @@ Exemplo de como inserir:
 ```markdown
 #### Interface original de teoria musical
 
-![Print da interface MusicTheoryAPI](../../../assets/print-music-theory-api.png)
+![Print da interface MusicTheoryAPI](./assets/print-music-theory-api/png)
 
 #### Interface original de treinamento rítmico
 
-![Print da interface RhythmTrainerAPI](../../../assets/print-rhythm-trainer-api.png)
+![Print da interface RhythmTrainerAPI](./assets/print-rhythm-trainer-api.png)
 ```
 
 ---
@@ -74,11 +74,11 @@ Exemplo:
 ```markdown
 #### Adapter para teoria musical
 
-![Print do MusicTheoryAdapter](../../../assets/print-music-theory-adapter.png)
+![Print do MusicTheoryAdapter](./assets/print-music-theory-adapter.png)
 
 #### Adapter para treinamento rítmico
 
-![Print do RhythmTrainerAdapter](../../../assets/print-rhythm-trainer-adapter.png)
+![Print do RhythmTrainerAdapter](./assets/print-rhythm-trainer-adapter.png)
 ```
 
 ---
@@ -92,7 +92,7 @@ Exemplo:
 ```markdown
 #### Interface unificada
 
-![Print da interface MusicExerciseInterface](../../../assets/print-music-exercise-interface.png)
+![Print da interface MusicExerciseInterface](./assets/print-music-exercise-interface.png)
 ```
 
 ---
@@ -107,7 +107,7 @@ Exemplo:
 ```markdown
 #### Uso do Adapter no sistema
 
-![Print do uso do Adapter no LearningSystem](../../../assets/print-uso-adapter-learningsystem.png)
+![Print do uso do Adapter no LearningSystem](./assets/print-uso-adapter-learningsystem.png)
 
 ```
 
@@ -120,7 +120,7 @@ Exemplo:
 ```markdown
 #### Tela da plataforma Mundo Musical
 
-![Print da tela da plataforma](../../../assets/print-tela-mundomusical.png)
+![Print da tela da plataforma](././assets/print-tela-mundomusical.png)
 ```
 
 ---
