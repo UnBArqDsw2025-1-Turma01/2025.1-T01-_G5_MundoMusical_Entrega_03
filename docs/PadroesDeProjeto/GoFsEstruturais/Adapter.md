@@ -4,11 +4,9 @@
 
 O padrão estrutural **Adapter** permite que objetos com interfaces incompatíveis trabalhem juntos. Ele atua como um wrapper que converte a interface de uma classe em outra interface esperada pelos clientes, permitindo que classes que não poderiam trabalhar juntas devido a interfaces incompatíveis possam colaborar.
 
-### Objetivo
+## Objetivo
 
 Permitir que um objeto seja substituído por outro que, apesar de realizar a mesma tarefa, possui uma interface diferente, facilitando a integração entre sistemas ou componentes com interfaces distintas.
-
----
 
 ## Metodologia
 
@@ -38,92 +36,61 @@ O padrão Adapter foi empregado para permitir a integração de diferentes módu
 - Manutenção da compatibilidade
 - Facilitar futuras extensões
 
----
 ## Implementação
-
-### Interfaces Originais
-
-**Insira prints dos arquivos de interface originais, por exemplo:**
-
-- `MusicTheoryAPI.ts`
-- `RhythmTrainerAPI.ts`
-
-Exemplo de como inserir:
 
 ```markdown
 #### Interface original de teoria musical
+```
 
-![Print da interface MusicTheoryAPI](./assets/print-music-theory-api/png)
+![Print da interface MusicTheoryAPI](./assets/print-music-theory-api.png)
 
+```markdown
 #### Interface original de treinamento rítmico
+```
 
 ![Print da interface RhythmTrainerAPI](./assets/print-rhythm-trainer-api.png)
-```
 
 ---
 
 ### Adapter
 
-**Insira prints dos adapters implementados:**
-
-- `MusicTheoryAdapter.ts`
-- `RhythmTrainerAdapter.ts`
-
-Exemplo:
-
 ```markdown
 #### Adapter para teoria musical
+```
 
 ![Print do MusicTheoryAdapter](./assets/print-music-theory-adapter.png)
 
+```markdown
 #### Adapter para treinamento rítmico
-
-![Print do RhythmTrainerAdapter](./assets/print-rhythm-trainer-adapter.png)
 ```
 
+![Print do RhythmTrainerAdapter](./assets/print-rhythm-trainer-adapter.png)
+
 ---
-
-### Interface Unificada
-
-**Insira print da interface unificada que o Adapter expõe para o sistema:**
-
-- `MusicExerciseInterface.ts`
 
 ```markdown
 #### Interface unificada
+```
 
 ![Print da interface MusicExerciseInterface](./assets/print-music-exercise-interface.png)
-```
 
 ---
 
-### Uso do Adapter no Sistema
-
-**Insira print do trecho de código onde o Adapter é utilizado no componente principal:**
-
-- `MundoMusicalLearningSystem.ts`
-- `MundoMusicalComponent.tsx` (trecho onde instancia e usa o adapter)
-
 ```markdown
 #### Uso do Adapter no sistema
+```
 
 ![Print do uso do Adapter no LearningSystem](./assets/print-uso-adapter-learningsystem.png)
-
-```
 
 ---
 
 ## Resultado Visual
 
-**Insira print da tela do sistema funcionando, mostrando a integração dos exercícios via Adapter:**
-
 ```markdown
 #### Tela da plataforma Mundo Musical
-
-![Print da tela da plataforma](././assets/print-tela-mundomusical.png)
 ```
 
----
+![Print da tela da plataforma](././assets/print-tela-mundomusical.png)
 
 ## Conclusão
 
