@@ -1,0 +1,35 @@
+[
+  {
+    "id": "1",
+    "title": "Como faço para resetar minha senha?",
+    "children": [
+      {
+        "id": "1.1",
+        "title": "Você pode clicar em 'Esqueci minha senha' na tela de login.",
+        "children": []
+      },
+      {
+        "id": "1.2",
+        "title": "Ainda não recebi o e-mail de redefinição. O que faço?",
+        "children": [
+          {
+            "id": "1.2.1",
+            "title": "Verifique sua caixa de spam. Às vezes o e-mail cai lá.",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Como é pegar matérias com o casal Serrano?",
+    "children": [
+      {
+        "id": "2.1",
+        "title": "Eles são bem tranquilos, pode pegar sem medo!",
+        "children": []
+      }
+    ]
+  }
+]
