@@ -49,7 +49,7 @@ A estrutura do padrão Prototype envolve três elementos principais:
 - **Pode ocultar dependências**: Como a criação ocorre por cópia, o rastreamento de dependências pode ficar menos evidente.
 
 
-## Uso do padrão Prototype em JavaScript
+##  8. Uso do padrão Prototype na classe exercicio 
 
 ```javascript
 // Objeto protótipo
@@ -73,11 +73,24 @@ console.log("Original:", exercicioBase);
 console.log("Clone:", novoExercicio);
 
 ```
-## 8. Conclusão
+## 9. Saída Esperada
+```javascript
+Original: { titulo: 'Identifique o acorde', tipo: 'Audição', dificuldade: 'Média', conteudo: [...], clone: [Function: clone] }
+Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade: 'Fácil', conteudo: [...], clone: [Function: clone] }
+```
+
+### 10. Ferramentas Utilizadas
+
+- **Linguagem de Programação**: TypeScript (React)
+- **IDE**: VSCode
+- **Ferramentas de Modelagem**: Lucidchart para diagramas UML
+- **Controle de Versão**: Git/GitHub
+
+## 11. Conclusão
 
 O padrão de projeto Prototype é uma solução eficiente e reutilizável para a criação de objetos complexos, permitindo que novas instâncias sejam geradas a partir de cópias de objetos já existentes. Ao reduzir o custo de criação e promover flexibilidade, esse padrão contribui para um código mais limpo e performático. No entanto, sua implementação exige atenção especial à clonagem de objetos, principalmente quando há estruturas internas complexas. Quando bem utilizado, o Prototype pode ser um poderoso aliado no desenvolvimento de sistemas escaláveis e bem estruturados.
 
-## 9.. Histórico de Versão
+## 12. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
