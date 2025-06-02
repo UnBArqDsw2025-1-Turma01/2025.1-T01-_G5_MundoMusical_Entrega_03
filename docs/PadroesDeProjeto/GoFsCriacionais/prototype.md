@@ -78,8 +78,8 @@ console.log("Clone:", novoExercicio);
 Original: { titulo: 'Identifique o acorde', tipo: 'Audição', dificuldade: 'Média', conteudo: [...], clone: [Function: clone] }
 Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade: 'Fácil', conteudo: [...], clone: [Function: clone] }
 ```
+![Protótipo](../../../assets/prototype.jpeg)
 
-## Prints
 
 ## 10. Ferramentas Utilizadas
 
@@ -98,4 +98,6 @@ O padrão de projeto Prototype é uma solução eficiente e reutilizável para a
 | 1.0    | 01/06/2025 | DD/MM/AAAA               | Criação do documento e o do padrão Prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
 | 1.1    | 02/06/2025 | DD/MM/AAAA               | Atualizando doc| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
+|    |  |              |  |  | |  |
+| 1.2    | 02/06/2025 | DD/MM/AAAA               | Inserindo gof prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
