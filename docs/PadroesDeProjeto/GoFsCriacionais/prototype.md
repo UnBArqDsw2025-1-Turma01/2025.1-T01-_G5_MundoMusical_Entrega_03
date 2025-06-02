@@ -79,11 +79,12 @@ Original: { titulo: 'Identifique o acorde', tipo: 'Audição', dificuldade: 'Mé
 Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade: 'Fácil', conteudo: [...], clone: [Function: clone] }
 ```
 
-### 10. Ferramentas Utilizadas
+## Prints
 
-- **Linguagem de Programação**: TypeScript (React)
+## 10. Ferramentas Utilizadas
+
+- **Linguagem de Programação**: JavaScript (React)
 - **IDE**: VSCode
-- **Ferramentas de Modelagem**: Lucidchart para diagramas UML
 - **Controle de Versão**: Git/GitHub
 
 ## 11. Conclusão
@@ -91,9 +92,10 @@ Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade
 O padrão de projeto Prototype é uma solução eficiente e reutilizável para a criação de objetos complexos, permitindo que novas instâncias sejam geradas a partir de cópias de objetos já existentes. Ao reduzir o custo de criação e promover flexibilidade, esse padrão contribui para um código mais limpo e performático. No entanto, sua implementação exige atenção especial à clonagem de objetos, principalmente quando há estruturas internas complexas. Quando bem utilizado, o Prototype pode ser um poderoso aliado no desenvolvimento de sistemas escaláveis e bem estruturados.
 
 ## 12. Histórico de Versão
-## 9. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
 | 1.0    | 01/06/2025 | DD/MM/AAAA               | Criação do documento e o do padrão Prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
+|    |  |              |  |  | |  |
+| 1.1    | 02/06/2025 | DD/MM/AAAA               | Atualizando doc| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
