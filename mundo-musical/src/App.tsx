@@ -1,11 +1,16 @@
+import { Routes, Route } from 'react-router-dom'
+import {Home} from './pages/Home'
+import Login from './pages/Login'
 import { Toaster } from 'sonner'
-import { Home } from './pages/Home'
 
 function App() {
-
   return (
     <>
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+
       <Toaster richColors position="top-right" />
     </>
   )
