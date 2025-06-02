@@ -1,3 +1,4 @@
+import React from 'react';
 import { Lesson } from '@/core/lesson/Lesson';
 import { LessonModule } from '@/core/lesson/LessonModule';
 import { UserProgress } from '@/core/user/UserProgress';
@@ -6,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
 import { CheckCircle2 } from 'lucide-react';
 import { toast } from 'sonner';
-import { practiceSubject } from '@/core/rewards/PracticeSubjects';
+import acordeMp3 from '@/assets/acorde.mp3';
 
 export const LessonView = () => {
   const module = new LessonModule('🎵 Módulo 1: Intervalos');
@@ -15,7 +16,6 @@ export const LessonView = () => {
 
   const handleComplete = () => {
     UserProgress.getInstance().completeLesson();
-    practiceSubject.notify();
 
     toast.success('Módulo concluído!', {
       description: 'Você ganhou uma recompensa por completar este módulo. 🎉',
@@ -35,8 +35,22 @@ export const LessonView = () => {
 
         <Separator />
 
+
+        <div className="w-full">
+          <audio
+            controls
+            src={acordeMp3}
+            className="w-full h-10 rounded-md border border-gray-300"
+          >
+            Seu navegador não suporta o elemento de áudio.
+          </audio>
+        </div>
+
+        <Separator />
+
         <div className="space-y-3">
-          {module.getContent()
+          {module
+            .getContent()
             .split('\n')
             .map((line, index) => (
               <div key={index} className="flex items-start gap-3">

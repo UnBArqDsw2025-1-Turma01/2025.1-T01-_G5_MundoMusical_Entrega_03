@@ -48,6 +48,31 @@ A estrutura do padrão Prototype envolve três elementos principais:
 - **Manutenção adicional**: É necessário garantir que a operação de clonagem funcione corretamente em todas as classes envolvidas.
 - **Pode ocultar dependências**: Como a criação ocorre por cópia, o rastreamento de dependências pode ficar menos evidente.
 
+
+## Uso do padrão Prototype em JavaScript
+
+```javascript
+// Objeto protótipo
+const exercicioBase = {
+  titulo: "Identifique o acorde",
+  tipo: "Audição",
+  dificuldade: "Média",
+  conteudo: ["Áudio de acorde", "Alternativas múltiplas"],
+  clone() {
+    return { ...this }; // Cria uma cópia superficial do objeto
+  }
+};
+
+// Clonando o exercício para customizar
+const novoExercicio = exercicioBase.clone();
+novoExercicio.titulo = "Identifique o acorde maior";
+novoExercicio.dificuldade = "Fácil";
+
+// Exibindo os objetos
+console.log("Original:", exercicioBase);
+console.log("Clone:", novoExercicio);
+
+```
 ## 8. Conclusão
 
 O padrão de projeto Prototype é uma solução eficiente e reutilizável para a criação de objetos complexos, permitindo que novas instâncias sejam geradas a partir de cópias de objetos já existentes. Ao reduzir o custo de criação e promover flexibilidade, esse padrão contribui para um código mais limpo e performático. No entanto, sua implementação exige atenção especial à clonagem de objetos, principalmente quando há estruturas internas complexas. Quando bem utilizado, o Prototype pode ser um poderoso aliado no desenvolvimento de sistemas escaláveis e bem estruturados.
