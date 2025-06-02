@@ -24,6 +24,10 @@ export class LessonBoxModule implements LBoxComponent {
   }
 
   getInfo(): string {
-    return this.children.map(child => `  - ${child.getInfo()}`).join('\n');
+    return this.children.map(child => `${child.getInfo()}`).join('\n');
+  }
+
+  getChildren(): LBoxComponent[] {
+    return this.children;
   }
 }

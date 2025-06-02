@@ -20,6 +20,8 @@ export class LessonBox implements LBoxComponent {
   }
 
   getInfo(): string {
-    return `${this.getTitle()} — ${this.getChapter()} — ${this.getActual()}/${this.getTotal()}`;
+    return `${this.getTitle()}
+          ${this.getChapter()}
+          Lição ${this.getActual()} de ${this.getTotal()}`;
   }
 }

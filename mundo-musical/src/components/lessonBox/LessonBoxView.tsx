@@ -2,7 +2,6 @@ import { LessonBox } from '@/core/lessonBox/LessonBox';
 import { LessonBoxModule } from '@/core/lessonBox/LessonBoxModule';
 import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { CheckCircle2 } from 'lucide-react';
 // import { UserProgress } from '@/core/user/UserProgress';
 // import { Button } from '@/components/ui/button';
 // import { toast } from 'sonner';
@@ -10,29 +9,28 @@ import { CheckCircle2 } from 'lucide-react';
 
 export const LessonBoxView = () => {
   const lessonbox = new LessonBoxModule('Licoes');
-  lessonbox.add(new LessonBox('Licao 1', 2, 4, 3));
-  lessonbox.add(new LessonBox('Licao 2', 3, 5, 4));
-  lessonbox.add(new LessonBox('Licao 3', 0, 6, 1));
+  lessonbox.add(new LessonBox('Leitura de partitura', 2, 4, 3));
+  lessonbox.add(new LessonBox('Ritmo', 3, 5, 4));
+  lessonbox.add(new LessonBox('Acordes', 0, 6, 1));
 
   return (
     <Card className="mb-8 shadow-md border-2 border-muted rounded-2xl">
       <CardContent className="p-6 space-y-5">
         <div>
           <h2 className="text-2xl font-bold mb-1">{lessonbox.getTitle()}</h2>
-          <h2 className="text-2m font-bold mb-1">{"Total modulos completados: " + lessonbox.getActual() + "/" + lessonbox.getTotal()}</h2>
+          <h2 className="text-md font-bold mb-1">{"Total licoes completadas: " + lessonbox.getActual() + " de " + lessonbox.getTotal()}</h2>
         </div>
 
         <Separator />
 
-        <div className="space-y-3">
-          {lessonbox.getInfo()
-            .split('\n')
-            .map((line, index) => (
-              <div key={index} className="flex items-start gap-3">
-                <CheckCircle2 className="text-green-500 mt-[3px]" size={18} />
-                <p className="text-base leading-relaxed">{line}</p>
-              </div>
-            ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {lessonbox.getChildren().map((child, index) => (
+            <Card key={index} className="p-4 border shadow-md rounded-lg">
+              <h3 className="text-lg font-semibold">{child.getTitle()}</h3>
+              <p>{child.getChapter()}</p>
+              <p>Lição {child.getActual()} de {child.getTotal()}</p>
+            </Card>
+          ))}
         </div>
 
       </CardContent>
