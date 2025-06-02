@@ -37,11 +37,15 @@ O padrão Strategy foi empregado para permitir a aplicação de diferentes lógi
 - Separação clara entre lógica principal e variações de comportamento
 - Potencial de reutilização e manutenção facilitada
 
-## Implementação
+## Implementação - Estratégias de Recompensa de XP
 
-### Estratégias de Recompensa de XP
+### Diagrama UML
 
+<div style="width: 640px; height: 480px; margin-left: 100px; position: relative;"><iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embedded/768a5c74-e2c8-461c-98bf-134fcdc5e1de" id="KTplE7VTO.YA"></iframe></div>
+
+### Código
 - `src/strategy/XPReward.js`
+
 ```javascript
 // Estratégias de cálculo de XP
 class XPBasico {
@@ -93,4 +97,5 @@ console.log(gerador.gerar(10)); // 60
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
-| 1.0    | 02/06/2025 | DD/MM/AAAA  | Criação do documento e o do padrão Prototype| [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) | Revisão ortográfica |
+| 1.0    | 02/06/2025 | DD/MM/AAAA  | Criação do documento padrão Strategy | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) | Revisão ortográfica |
+| 1.1    | 02/06/2025 | DD/MM/AAAA  | Adição do diagrama UML | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) |  |
