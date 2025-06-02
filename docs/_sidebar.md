@@ -4,6 +4,7 @@
   - 3. [Desenho de Software (Padrões de Projeto)](/PadroesDeProjeto/3.PadreosDeProjeto.md)
     - [3.1. Padrões Criacionais](/PadroesDeProjeto/GoFsCriacionais/3.1.GoFsCriacionais.md)
       - [Builder](/PadroesDeProjeto/GoFsCriacionais/builder.md)
+      - [Singleton](/PadroesDeProjeto/GoFsCriacionais/singleton.md)
       - [Prototype](/PadroesDeProjeto/GoFsCriacionais/prototype.md)
     - [3.2. Padrões Estruturais](/PadroesDeProjeto/GoFsEstruturais/3.2.GoFsEstruturais.md)
       - [Adapter](/PadroesDeProjeto/GoFsEstruturais/adapter.md)
