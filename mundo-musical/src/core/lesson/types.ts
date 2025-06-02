@@ -1,4 +1,8 @@
 export interface LessonComponent {
+  id: string;
   getTitle(): string;
-  getContent(): string;
+  isCompleted(): boolean;
+  toggleComplete(force?: boolean): void;
+  subscribe(listener: () => void): void;
+  unsubscribe(listener: () => void): void;
 }

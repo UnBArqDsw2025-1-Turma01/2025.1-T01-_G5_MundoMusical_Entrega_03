@@ -1,13 +1,33 @@
-import type { LessonComponent } from './types';
+import type { LessonComponent } from "./types";
 
 export class Lesson implements LessonComponent {
-  constructor(private title: string, private content: string) {}
+  private completed = false;
+  private listeners: Array<() => void> = [];
 
-  getTitle() {
+  constructor(public id: string, private title: string) {}
+
+  getTitle(): string {
     return this.title;
   }
 
-  getContent() {
-    return this.content;
+  isCompleted(): boolean {
+    return this.completed;
+  }
+
+  toggleComplete(force?: boolean): void {
+    this.completed = typeof force === "boolean" ? force : !this.completed;
+    this.notify();
+  }
+
+  subscribe(listener: () => void): void {
+    this.listeners.push(listener);
+  }
+
+  unsubscribe(listener: () => void): void {
+    this.listeners = this.listeners.filter(fn => fn !== listener);
+  }
+
+  private notify() {
+    this.listeners.forEach(fn => fn());
   }
 }
