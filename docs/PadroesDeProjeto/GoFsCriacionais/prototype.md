@@ -99,3 +99,5 @@ O padrão de projeto Prototype é uma solução eficiente e reutilizável para a
 |    |  |              |  |  | |  |
 | 1.1    | 02/06/2025 | DD/MM/AAAA               | Atualizando doc| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
+| 1.2    | 02/06/2025 | DD/MM/AAAA               | Inserindo gof prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
+|    |  |              |  |  | |  |
