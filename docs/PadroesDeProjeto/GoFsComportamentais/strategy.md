@@ -39,31 +39,55 @@ O padrão Strategy foi empregado para permitir a aplicação de diferentes lógi
 
 ## Implementação
 
-### Estratégias de Feedback
+### Estratégias de Recompensa de XP
 
-**Insira prints das estratégias implementadas, por exemplo:**
+- `src/strategy/XPReward.js`
+```javascript
+// Estratégias de cálculo de XP
+class XPBasico {
+  calcular(pontuacao) {
+    return pontuacao;
+  }
+}
 
-- `FeedbackMotivacional.ts`
-- `FeedbackEstatistico.ts`
-- `FeedbackComDica.ts`
-- `FeedbackNeutro.ts`
+class XPDificil {
+  calcular(pontuacao) {
+    return pontuacao * 2;
+  }
+}
 
+class XPMissaoDiaria {
+  calcular(pontuacao) {
+    return pontuacao + 50;
+  }
+}
 
-#### Estratégia motivacional
+// Contexto que usa a estratégia
+class GeradorDeXP {
+  constructor(estrategia) {
+    this.estrategia = estrategia;
+  }
 
-![Print do FeedbackMotivacional](../../../assets/print-feedback-motivacional.png)
+  setEstrategia(estrategia) {
+    this.estrategia = estrategia;
+  }
 
-#### Estratégia estatística
+  gerar(pontuacao) {
+    return this.estrategia.calcular(pontuacao);
+  }
+}
 
-![Print do FeedbackEstatistico](../../../assets/print-feedback-estatistico.png)
+// Uso
+const gerador = new GeradorDeXP(new XPBasico());
 
-#### Estratégia com dica
+console.log(gerador.gerar(10)); // 10
 
-![Print do FeedbackComDica](../../../assets/print-feedback-com-dica.png)
+gerador.setEstrategia(new XPDificil());
+console.log(gerador.gerar(10)); // 20
 
-#### Estratégia neutra
-
-![Print do FeedbackNeutro](../../../assets/print-feedback-neutro.png)
+gerador.setEstrategia(new XPMissaoDiaria());
+console.log(gerador.gerar(10)); // 60
+```
 
 ## Histórico de Versão
 
