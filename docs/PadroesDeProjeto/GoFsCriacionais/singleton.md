@@ -86,7 +86,7 @@ Garante que apenas uma instância do AuthSubject exista na aplicação, centrali
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
-**Figura 01 - Controle de autenticação do Singleton**
+**Figura 02 - Controle de autenticação do Singleton**
 
 ![Singleton 2](../../assets/subgrupo02/criacional/singleton_enrico2.png)
 
