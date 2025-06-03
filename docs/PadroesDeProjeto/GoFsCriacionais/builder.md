@@ -36,6 +36,8 @@ A estrutura do padrão Builder envolve quatro elementos principais:
 - Product: É o objeto complexo que está sendo construído. O Builder Concreto é responsável por montar as partes e retornar uma instância do Produto.
 - Director: O Diretor é a entidade que orquestra o processo de construção. Ele sabe a sequência de passos para construir um objeto, mas não sabe os detalhes de como cada passo é implementado. Ele interage com o Builder para executar esses passos.
 
+Para a aplicação em TypeScript, o uso de um diretor não é padronizado. A própria entidade escolhida contém seus métodos de construção
+
 ## 6. Vantagens
 
 - Evita Construtores Muito Grandes: Evita ter um construtor de objeto com muitos parâmetros diferentes. O Builder permite construir o objeto passo a passo.
@@ -57,9 +59,12 @@ A estrutura do padrão Builder envolve quatro elementos principais:
 
 Com a flexibilidade do padrão Builder, ele se torna uma ferramenta poderosa para gerenciar a complexidade na criação de objetos, garantindo que você construa exatamente o que precisa, quando precisa.
 
-## 10. Histórico de Versão
+## 10. Referências
+> Refactoring Guru. **Builder** https://refactoring.guru/design-patterns/builder.
+
+## 11. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
-| 1.0    | 01/06/2025 | DD/MM/AAAA               | Criação do documento builder| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
-| 1.1    | 02/06/2025 |              | Criação do conteudo do artefato  | [Esther Sousa](https://github.com/EstherSousa). | |  |
+| 1.0    | 01/06/2025 | 01/06/2025               | Criação do documento builder| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
+| 1.1    | 02/06/2025 |02/06/2025| Criação do conteudo do artefato  | [Esther Sousa](https://github.com/EstherSousa). | [Laís Soares](https://github.com/Laisczt)| faltava referência ao refactoring guru  |
