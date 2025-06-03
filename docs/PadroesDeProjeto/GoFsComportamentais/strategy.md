@@ -97,5 +97,5 @@ console.log(gerador.gerar(10)); // 60
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
-| 1.0    | 02/06/2025 | DD/MM/AAAA  | Criação do documento padrão Strategy | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) | Revisão ortográfica |
-| 1.1    | 02/06/2025 | DD/MM/AAAA  | Adição do diagrama UML | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) |  |
+| 1.0    | 02/06/2025 | 02/06/2025  | Criação do documento padrão Strategy | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) | Revisão ortográfica |
+| 1.1    | 02/06/2025 | 02/06/2025  | Adição do diagrama UML | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) |  |
