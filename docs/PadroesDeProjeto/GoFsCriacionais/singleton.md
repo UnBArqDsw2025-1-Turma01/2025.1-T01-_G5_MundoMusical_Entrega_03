@@ -69,7 +69,7 @@ Ao utilizar o Singleton, o AudioManager assegura que todas as chamadas para mani
 
 **Figura 01 - Audio Manager**
 
-![Audio Manager](../../assets/subgrupo02/estrutural/singleton.png)
+![Audio Manager](../../assets/subgrupo02/criacional/singleton.png)
 
 *Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
 
