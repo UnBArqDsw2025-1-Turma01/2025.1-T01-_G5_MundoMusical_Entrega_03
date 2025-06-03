@@ -83,7 +83,23 @@ A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes 
 
 **Figura 04 - Resultado**
 
-### 9.2 Proximo xxxxx
+### 9.2 Gerenciamento de Observers - Enrico Martins Mantoan Zoratto
+
+A funcionalidade do CompositeObserver tem como objetivo tratar grupos de observers individuais como um único objeto, simplificando a notificação de mudanças de estado de autenticação para múltiplos componentes simultaneamente.
+
+<center>
+
+**Figura 01 - Estrutura do Composite**
+
+![Composite Enrico](../../assets/subgrupo02/estrutural/composite_enrico.png)
+
+*Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
+
+**Figura 012 - Código do Composite**
+
+![Composite Enrico 2](../../assets/subgrupo02/estrutural/composite_enrico2.png)
+
+*Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
 
 ## 10. Referências Bibliográficas
