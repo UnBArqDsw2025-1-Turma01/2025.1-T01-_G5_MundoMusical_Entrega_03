@@ -29,7 +29,7 @@ export default function Login() {
 
   useEffect(() => {
     if (isAuthenticated) {
-      navigate('/*', { replace: true });
+      navigate('/topics/:id', { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
