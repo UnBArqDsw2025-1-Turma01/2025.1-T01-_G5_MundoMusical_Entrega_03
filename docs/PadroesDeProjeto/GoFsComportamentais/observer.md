@@ -83,7 +83,24 @@ Dessa forma, a aplicação mantém um baixo acoplamento entre o estado global do
 
 **Figura 04 - Resultado**
 
-### 9.2 Proximo xxxxx
+### 9.2 Notificação de Autenticação - Enrico Martins Mantoan Zoratto
+
+Permite que componentes React (como Login e PrivateRoute) reajam dinamicamente a mudanças no estado de autenticação, mantendo um baixo acoplamento.
+
+<center>
+
+**Figura 01 - Estrutura do Observer**
+
+![Observer](../../assets/subgrupo02/comportamental/observer_enrico.png)
+
+*Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
+
+**Figura 01 - Estrutura do Observer**
+
+![Observer 2](../../assets/subgrupo02/comportamental/observer_enrico2.png)
+
+*Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
+
 
 </center>
 
