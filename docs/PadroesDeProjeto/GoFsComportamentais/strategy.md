@@ -93,9 +93,15 @@ gerador.setEstrategia(new XPMissaoDiaria());
 console.log(gerador.gerar(10)); // 60
 ```
 
+## Referências
+
+1. GAMMA, Erich et al. *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley, 1994.
+2. HEWAWASAM, Lakindu. Using GoF design patterns with React. Blog Bits and Pieces, 1 junho 2025. Disponível em: https://blog.bitsrc.io/
+
 ## Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
 | 1.0    | 02/06/2025 | 02/06/2025  | Criação do documento padrão Strategy | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) | Revisão ortográfica |
 | 1.1    | 02/06/2025 | 02/06/2025  | Adição do diagrama UML | [Arthur Rodrigues](https://github.com/arthurrsousa) | [Amanda Abreu](https://github.com/Amandaaaaabreu) |  |
+| 1.2    | 02/06/2025 |   | Adição das referências | [Arthur Rodrigues](https://github.com/arthurrsousa) | |  |
