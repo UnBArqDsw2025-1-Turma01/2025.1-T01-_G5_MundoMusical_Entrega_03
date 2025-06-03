@@ -80,13 +80,13 @@ Ao utilizar o Singleton, o AudioManager assegura que todas as chamadas para mani
 
 Garante que apenas uma instância do AuthSubject exista na aplicação, centralizando o estado de autenticação e evitando inconsistências.
 
-**Figura 01 - Estrutura do Singleton**
+**Figura 03 - Estrutura do Singleton**
 
 ![Singleton](../../assets/subgrupo02/criacional/singleton_enrico.png)
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
-**Figura 02 - Controle de autenticação do Singleton**
+**Figura 04 - Controle de autenticação do Singleton**
 
 ![Singleton 2](../../assets/subgrupo02/criacional/singleton_enrico2.png)
 
