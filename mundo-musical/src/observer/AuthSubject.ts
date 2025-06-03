@@ -4,7 +4,7 @@ import { CompositeObserver } from './CompositeObserver';
 class AuthSubject {
   private static instance: AuthSubject;
   private observers = new CompositeObserver();
-  private isAuthenticated = false;
+  private isAuth = false
   private currentUser: string | null = null;
 
   private constructor() {}
@@ -18,7 +18,7 @@ class AuthSubject {
 
   subscribe(observer: IAuthObserver): void {
     this.observers.add(observer);
-    observer.update(this.isAuthenticated);
+    observer.update(this.isAuth);
   }
 
   unsubscribe(observer: IAuthObserver): void {
@@ -30,17 +30,19 @@ class AuthSubject {
   }
 
   private notify(): void {
-    this.observers.update(this.isAuthenticated);
+    this.observers.update(this.isAuth);
   }
 
   private validarCredenciais(usuario: string, senha: string): boolean {
-    // Sua lógica real de autenticação
-    return true;
+    if (usuario === 'admin' && senha === 'admin') {
+      return true;
+    }
+    return false
   }
 
   loginUser(usuario: string, senha: string): boolean {
     if (this.validarCredenciais(usuario, senha)) {
-      this.isAuthenticated = true;
+      this.isAuth = true;
       this.currentUser = usuario;
       this.notify();
       return true;
@@ -49,15 +51,15 @@ class AuthSubject {
   }
 
   logout(): void {
-    if (this.isAuthenticated) {
-      this.isAuthenticated = false;
+    if (this.isAuth) {
+      this.isAuth = false;
       this.currentUser = null;
       this.notify();
     }
   }
 
   getAuthStatus(): boolean {
-    return this.isAuthenticated;
+    return this.isAuth;
   }
 
   getCurrentUser(): string | null {

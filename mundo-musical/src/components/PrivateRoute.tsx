@@ -1,31 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
-import { authSubject } from '@/observer/AuthSubject';
-import { SimpleObserver } from '@/observer/SimpleObserver';
+import { Navigate, Outlet, useLocation } from 'react-router-dom';
+import { useAuthContext } from '@/contexts/authContext';
 
 export default function PrivateRoute() {
-  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
-
-  useEffect(() => {
-    const observer = new SimpleObserver((status) => {
-      setIsAuthenticated(status);
-    });
-
-    authSubject.subscribe(observer);
-
-    setIsAuthenticated(authSubject.getAuthStatus());
-
-    return () => {
-      authSubject.unsubscribe(observer);
-    };
-  }, []);
-
-  if (isAuthenticated === null) {
-    return <div>Carregando...</div>;
-  }
+  const { isAuthenticated } = useAuthContext();
+  const location = useLocation();
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/login" replace state={{ from: location }} />;
   }
 
   return <Outlet />;

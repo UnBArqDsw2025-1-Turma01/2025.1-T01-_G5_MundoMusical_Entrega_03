@@ -1,8 +1,11 @@
-import { LessonModuleView } from "@/components/lesson/LessonView";
 import { useEffect, useState } from "react";
-import { createModules } from "@/lib/setupLessons";
-import type { LessonModule } from "@/core/lesson/LessonModule";
 import { useParams } from "react-router";
+
+import { LessonModuleView } from "@/components/lesson/LessonView";
+
+import { createModules } from "@/lib/setupLessons";
+
+import type { LessonModule } from "@/core/lesson/LessonModule";
 
 export const Topic = () => {
   const [modules, setModules] = useState<LessonModule[]>([]);

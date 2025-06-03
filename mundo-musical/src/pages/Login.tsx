@@ -1,35 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
+
 import { authSubject } from '@/observer/AuthSubject';
-import { SimpleObserver } from '@/observer/SimpleObserver';
+
 import { Button } from '@/components/ui/button';
+
 import logo from '@/assets/images/logo.png';
+
+import { useAuthContext } from '@/contexts/authContext';
 
 export default function Login() {
   const [usuario, setUsuario] = useState('');
   const [senha, setSenha] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const [isAuthenticated, setIsAuthenticated] = useState(() => authSubject.getAuthStatus());
-
+  const {isAuthenticated, setIsAuthenticated} = useAuthContext()
   const navigate = useNavigate();
 
   useEffect(() => {
-    const observer = new SimpleObserver((auth) => {
-      setIsAuthenticated(auth);
-      setIsLoading(false);
-    });
-
-    authSubject.subscribe(observer);
-
-    return () => {
-      authSubject.unsubscribe(observer);
-    };
-  }, []);
-
-  useEffect(() => {
     if (isAuthenticated) {
-      navigate('/*', { replace: true });
+      navigate('/', { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
@@ -39,14 +29,16 @@ export default function Login() {
 
     try {
       const sucesso = authSubject.loginUser(usuario, senha);
-
+      console.log(sucesso)
       if (sucesso) {
         toast.success('Login realizado com sucesso!');
+        setIsAuthenticated(true)
       } else {
         toast.error('Credenciais inválidas!');
         setIsLoading(false);
       }
     } catch (error) {
+      console.log(error)
       toast.error('Erro ao fazer login. Tente novamente.');
       setIsLoading(false);
     }

@@ -1,18 +1,24 @@
-import { Button } from "@/components/ui/button";
+import { useEffect, useMemo, useState } from "react";
 import { toast } from 'sonner';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useMemo, useState } from "react";
+
 import { DailyMissions } from "@/components/user/DailyMissions";
+import { Button } from "@/components/ui/button";
 import { UserProgress } from "@/components/user/UserProgress";
-import { DailyMissionManager } from "@/core/missions/DailyMissionManager";
-import { setupMissions } from "@/lib/setupMissions";
 import { TopicGrid } from "@/components/topic/TopicGrid";
+
+import { DailyMissionManager } from "@/core/missions/DailyMissionManager";
 import type { Mission } from "@/core/missions/Mission";
+
+import { setupMissions } from "@/lib/setupMissions";
+
+import { useAuthContext } from "@/contexts/authContext";
 
 export const Home = () => {
   const navigate = useNavigate();
   const [missions, setMissions] = useState<Mission[]>([]);
-  const manager = useMemo(() => new DailyMissionManager(missions), [missions]) 
+  const manager = useMemo(() => new DailyMissionManager(missions), [missions])
+  const { setIsAuthenticated } = useAuthContext()
 
   useEffect(() => {
     const newMissions = setupMissions();
@@ -22,6 +28,7 @@ export const Home = () => {
 
   const handleLogout = () => {
     toast.success('Logout realizado com sucesso!');
+    setIsAuthenticated(false)
     setTimeout(() => {
       navigate('/login');
     }, 1000);
