@@ -49,11 +49,152 @@ Para a aplicação em TypeScript, o uso de um diretor não é padronizado. A pr�
 - Aumento da complexidade do código: Para cada tipo diferente de produto ou para cada variação significativa de construção, você precisará criar um ConcreteBuilder separado. Isso aumenta o número de classes no seu projeto.
 
 
+## 8. Uso do padrão Builder na classe Partitura
+
+```typescript
+class Partitura {
+    notas : Nota[] | null;
+    compasso : Compasso;
+    tempo : Number;
+    clave : Clave;
+    proxPartitura: Partitura | null;
+    escala: Escala;
+    repeticoes : Number;
+
+
+    constructor(notas: Nota[] | null) {
+        this.notas = notas;
+        this.compasso = new Compasso(4, 4);
+        this.tempo = 60;
+        this.clave = Clave.SOL;
+        this.proxPartitura = null;
+        this.escala = Escala.DOMAIOR
+        this.repeticoes = 0;
+        // this.dinamica = Dinamica.NONE;
+    }
+
+    setCompasso(compasso: Compasso) {
+        this.compasso = compasso;
+        return this;
+    }
+
+    setTempo(tempo: Number){
+        this.tempo = tempo;
+        return this;
+    }
+
+    setClave(clave: Clave){
+        this.clave = clave;
+        return this;
+    }
+
+    concatenate(proxPartitura: Partitura) {
+        this.proxPartitura = proxPartitura;
+        return this;
+    }
+
+    setEscala(escala: Escala) {
+        this.escala = escala;
+        return this;
+    }
+
+    repetir(vezes: Number) {
+        this.repeticoes = vezes;
+        return this;
+    }
+
+    build () {
+        // Suprimido para teste
+        // if (this.notas.length = 0) {
+        //     throw Error("Partitura criada sem notas");
+        // }
+        return this;
+    }
+
+    toString() : string {
+        let str = "qtde notas: " + ((this.notas != null) ? (this.notas?.length) : 0)
+        + ", clave: " + this.clave 
+        + ", tempo: " + this.tempo 
+        + ", compasso: " + this.compasso.toString()
+        + ", escala: " + this.escala 
+        + ", ritornelos: " + this.repeticoes 
+        + ", tem próxima:" + (this.proxPartitura != null);
+
+        return str;
+    }
+}
+```
+
+Para cada atributo não opcional da partitura (todos menos as notas), foi definido um valor padrão inicializado no construtor e um método de construção. Também foi formulado um método toString para facilitar os testes
+
+### Classes Adicionais usadas
+
+```typescript
+class Nota {
+
+}
+
+class Compasso {
+    numerador : Number;
+    denominador: Number;
+    constructor(numerador: Number, denominador: Number) {
+        this.numerador = numerador;
+        this.denominador = denominador;
+    }
+
+    toString() : string{
+        return this.numerador + "/" + this.denominador;
+    }
+}
+
+enum Clave {
+    SOL = "Sol",
+    FA = "Fá"
+
+}
+
+enum Escala {
+    DOMAIOR = "Do Maior",
+    REMENOR = "Re Menor",
+    SOLMAIOR = "Sol Maior",
+    PENTATONICAFASUS = "Pentatônica Fa#"
+}
+
+
+
+```
+## 9. Testes
+
+```typescript
+class Teste{
+    // Para facilitar os testes, foi permitido que partituras sejam criadas sem notas
+
+    partitura0 = new Partitura(null);
+    partitura1 = new Partitura(null).setTempo(120).setClave(Clave.FA).setEscala(Escala.REMENOR);
+    partitura2 = new Partitura(null).concatenate(this.partitura1).setCompasso(new Compasso(3, 4)).setTempo(120).setClave(Clave.FA).setEscala(Escala.REMENOR);
+    partitura3 = new Partitura(null).setEscala(Escala.PENTATONICAFASUS).repetir(2).setCompasso(new Compasso(5,4));
+
+    testar(){
+        console.log(this.partitura0.toString());
+        console.log(this.partitura1.toString());
+        console.log(this.partitura2.toString());
+        console.log(this.partitura3.toString());
+    }
+}
+let teste = new Teste();
+teste.testar();
+```
+### Saída Obtida
+![image](https://github.com/user-attachments/assets/4af7b767-28da-420a-a2d3-263ed033245a)
+
+
 ## 8. Ferramentas Utilizadas
 
 - **Linguagem de Programação**: JavaScript
 - **IDE**: VSCode
 - **Controle de Versão**: Git/GitHub
+
+Código completo disponível [aqui](https://github.com/UnBArqDsw2025-1-Turma01/2025.1-T01-_G5_MundoMusical_Entrega_03/blob/main/src/builder/Builder.ts)
   
 ## 9. Conclusão
 
@@ -68,3 +209,4 @@ Com a flexibilidade do padrão Builder, ele se torna uma ferramenta poderosa par
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
 | 1.0    | 01/06/2025 | 01/06/2025               | Criação do documento builder| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 | 1.1    | 02/06/2025 |02/06/2025| Criação do conteudo do artefato  | [Esther Sousa](https://github.com/EstherSousa). | [Laís Soares](https://github.com/Laisczt)| faltava referência ao refactoring guru  |
+| 1.2    | 02/06/2025 |02/06/2025| Mostrando os códigos | [Laís Soares](https://github.com/Laisczt)| [Esther Sousa](https://github.com/EstherSousa) | |
