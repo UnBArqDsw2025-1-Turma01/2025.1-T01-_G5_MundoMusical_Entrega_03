@@ -7,7 +7,7 @@
       - [Singleton](/PadroesDeProjeto/GoFsCriacionais/singleton.md)
       - [Prototype](/PadroesDeProjeto/GoFsCriacionais/prototype.md)
     - [3.2. Padrões Estruturais](/PadroesDeProjeto/GoFsEstruturais/3.2.GoFsEstruturais.md)
-      - [Adapter](/PadroesDeProjeto/GoFsEstruturais/adapter.md)
+      - [Adapter](/PadroesDeProjeto/GoFsEstruturais/Adapter.md)
     - [3.3. Padrões Comportamentais](/PadroesDeProjeto/GoFsComportamentais/3.3.GoFsComportamentais.md)
       - [Strategy](/PadroesDeProjeto/GoFsComportamentais/strategy.md)
     - [3.4. Participações em Padroes](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
