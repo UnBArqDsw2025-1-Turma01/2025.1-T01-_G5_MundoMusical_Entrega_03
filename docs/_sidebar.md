@@ -16,5 +16,6 @@
 
   - Atas de Reunião
     - [ata geral 22/05/2025](/PadroesDeProjeto/Reunioes/ata01.md)
+    - [Ata Subgrupo 03](/PadroesDeProjeto/Reunioes/ata_01_subgrupo03.md)
     - [Modelo de Ata](/PadroesDeProjeto/Reunioes/ataExemplo.md)
 
