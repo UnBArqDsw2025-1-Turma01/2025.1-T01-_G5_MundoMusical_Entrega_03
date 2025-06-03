@@ -57,31 +57,39 @@ As implementações do padrão Composite baseiam-se em uma interface comum para 
 
 A funcionalidade de componentes do fórum tem como objetivo estruturar a apresentação e o gerenciamento dos elementos da interface, permitindo a organização hierárquica dos tópicos e comentários dentro do sistema. Essa arquitetura segue o padrão Composite para facilitar o tratamento uniforme de componentes simples (como comentários individuais) e compostos (como tópicos com várias respostas), garantindo flexibilidade e escalabilidade na implementação do fórum.
 
-A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes envolvidos, evidenciando a organização modular do sistema.
+A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes envolvidos, evidenciando a organização modular do sistema e o diagrama UML produzido.
 
 <center>
 
-**Figura 01 - Forum Component**
+**Figura 01 - Diagrama Composite**
+
+![Forum Component](../../assets/subgrupo02/estrutural/composite_uml.png)
+
+*Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
+
+**Figura 02 - Forum Component**
 
 ![Forum Component](../../assets/subgrupo02/estrutural/forumcomponent.png)
 
 *Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
 
-**Figura 02 - Forum Composite**
+**Figura 03 - Forum Composite**
 
 ![Forum Composite](../../assets/subgrupo02/estrutural/forumcomposite.png)
 
 *Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
 
-**Figura 03 - Forum Leaf**
+**Figura 04 - Forum Leaf**
 
 ![Forum Leaf](../../assets/subgrupo02/estrutural/forumleaf.png)
 
 *Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
 
-</center>
+**Vídeo 01 - Resultado**
+Abaixo pode-se assistir o vídeo mostrando o resultado, ou [clicando aqui](https://www.youtube.com/watch?v=CMTKJVQeqBs&ab_channel=lucasdray)
 
-**Figura 04 - Resultado**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CMTKJVQeqBs?si=RT1BmnDERSQTtUwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
 
 ### 9.2 Gerenciamento de Observers - Enrico Martins Mantoan Zoratto
 
@@ -89,13 +97,13 @@ A funcionalidade do CompositeObserver tem como objetivo tratar grupos de observe
 
 <center>
 
-**Figura 01 - Estrutura do Composite**
+**Figura 05 - Estrutura do Composite**
 
 ![Composite Enrico](../../assets/subgrupo02/estrutural/composite_enrico.png)
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
-**Figura 012 - Código do Composite**
+**Figura 06 - Código do Composite**
 
 ![Composite Enrico 2](../../assets/subgrupo02/estrutural/composite_enrico2.png)
 
@@ -109,31 +117,31 @@ A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes 
 
 <center>
 
-**Figura 01 - Lista de lições Component**
+**Figura 07 - Lista de lições Component**
 
 ![Lista Component](../../assets/subgrupo02/estrutural/LBoxComponent.PNG)
 
 *Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
 
-**Figura 02 - Lista de lições Composite**
+**Figura 08 - Lista de lições Composite**
 
 ![Lista Composite](../../assets/subgrupo02/estrutural/LBoxModule.PNG)
 
 *Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
 
-**Figura 03 - Lista de lições Leaf**
+**Figura 09 - Lista de lições Leaf**
 
 ![Lista Leaf](../../assets/subgrupo02/estrutural/LBox.PNG)
 
 *Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
 
-**Figura 04 - Resultado**
+**Figura 10 - Resultado**
 
 ![Resultado](../../assets/subgrupo02/estrutural/compositelistagemLicoes.PNG)
 
 *Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
 
-**Figura 06 - Estrutura do Composite**
+**Figura 11 - Estrutura do Composite**
 
 ![Resultado](../../assets/subgrupo02/estrutural/compositeSebastianZuzunaga.PNG)
 
@@ -151,8 +159,8 @@ A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes 
 
 ## Histórico de Versão
 
-| Versão | Data       | Data de Revisão | Descrição                                                                                      | Autor(es)                                           | Revisor(es) | Detalhes da revisão |
-| ------ | ---------- | --------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------------- | ----------- | ------------------- |
-| 1.0    | 02/06/2025 |                 | Criação e estruturação do documento, adição da implementação relacionada as mensagens do forum | [Pedro Lucas Dourado](https://github.com/lucasdray) |             |                     |
+| Versão | Data       | Data de Revisão | Descrição                                                                                                 | Autor(es)                                           | Revisor(es) | Detalhes da revisão |
+| ------ | ---------- | --------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ----------- | ------------------- |
+| 1.0    | 02/06/2025 |                 | Criação e estruturação do documento, adição da implementação e diagrama relacionada as mensagens do forum | [Pedro Lucas Dourado](https://github.com/lucasdray) |             |                     |
 
 
