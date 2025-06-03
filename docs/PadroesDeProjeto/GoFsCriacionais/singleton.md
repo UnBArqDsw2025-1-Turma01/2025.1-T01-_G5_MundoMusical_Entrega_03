@@ -73,7 +73,12 @@ Ao utilizar o Singleton, o AudioManager assegura que todas as chamadas para mani
 
 *Fonte: [Pedro Lucas Dourado](https://github.com/lucasdray)*
 
-**Figura 02 - Resultado**
+**Vídeo 01 - Resultado**
+Abaixo pode-se assistir o vídeo mostrando o resultado, ou [clicando aqui](https://youtu.be/Tq6Wse3_W9I?si=cOqs7z_siMpiaZf2)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tq6Wse3_W9I?si=cOqs7z_siMpiaZf2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</center>
 
 
 ### 9.1 Controle Global de Autenticação - Enrico Martins Mantoan Zoratto
