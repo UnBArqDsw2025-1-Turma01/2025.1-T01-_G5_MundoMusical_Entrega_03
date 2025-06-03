@@ -8,6 +8,7 @@
       - [Prototype](/PadroesDeProjeto/GoFsCriacionais/prototype.md)
     - [3.2. Padrões Estruturais](/PadroesDeProjeto/GoFsEstruturais/3.2.GoFsEstruturais.md)
       - [Adapter](/PadroesDeProjeto/GoFsEstruturais/Adapter.md)
+      - [Composite](/PadroesDeProjeto/GoFsEstruturais/composite.md)
     - [3.3. Padrões Comportamentais](/PadroesDeProjeto/GoFsComportamentais/3.3.GoFsComportamentais.md)
       - [Strategy](/PadroesDeProjeto/GoFsComportamentais/strategy.md)
     - [3.4. Participações em Padroes](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
