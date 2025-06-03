@@ -34,7 +34,6 @@ class AuthSubject {
   }
 
   private validarCredenciais(usuario: string, senha: string): boolean {
-    // Sua lógica real de autenticação
     return true;
   }
 

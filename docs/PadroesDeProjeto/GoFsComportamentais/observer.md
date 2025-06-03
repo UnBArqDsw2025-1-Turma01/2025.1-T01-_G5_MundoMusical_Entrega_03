@@ -95,9 +95,15 @@ Permite que componentes React (como Login e PrivateRoute) reajam dinamicamente a
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
-**Figura 01 - Estrutura do Observer**
+**Figura 02 - Lógica de notificação do Observer**
 
 ![Observer 2](../../assets/subgrupo02/comportamental/observer_enrico2.png)
+
+*Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
+
+**Figura 03 - Notificação da autenticação**
+
+![Observer 3](../../assets/subgrupo02/comportamental/observer_enrico3.png)
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
