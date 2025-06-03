@@ -49,7 +49,7 @@ A estrutura do padrão Prototype envolve três elementos principais:
 - **Pode ocultar dependências**: Como a criação ocorre por cópia, o rastreamento de dependências pode ficar menos evidente.
 
 
-##  8. Uso do padrão Prototype na classe exercicio 
+##  8. Uso do padrão Prototype na classe Exercicio 
 
 ```javascript
 // Objeto protótipo
@@ -80,18 +80,25 @@ Clone:    { titulo: 'Identifique o acorde maior', tipo: 'Audição', dificuldade
 ```
 ![Protótipo](../../../assets/prototype.jpeg)
 
+## 10. Diagrama UML 
+  <iframe 
+    src="https://lucid.app/documents/embedded/6d5e9545-146d-4116-987a-3f274daaf38f"
+    style="width: 740px; height: 480px; border: none;"
+    allowfullscreen
+    id="tlql.XskdfTu"
+  ></iframe>
 
-## 10. Ferramentas Utilizadas
+## 11. Ferramentas Utilizadas
 
 - **Linguagem de Programação**: JavaScript (React)
 - **IDE**: VSCode
 - **Controle de Versão**: Git/GitHub
 
-## 11. Conclusão
+## 12. Conclusão
 
 O padrão de projeto Prototype é uma solução eficiente e reutilizável para a criação de objetos complexos, permitindo que novas instâncias sejam geradas a partir de cópias de objetos já existentes. Ao reduzir o custo de criação e promover flexibilidade, esse padrão contribui para um código mais limpo e performático. No entanto, sua implementação exige atenção especial à clonagem de objetos, principalmente quando há estruturas internas complexas. Quando bem utilizado, o Prototype pode ser um poderoso aliado no desenvolvimento de sistemas escaláveis e bem estruturados.
 
-## 12. Histórico de Versão
+## 13. Histórico de Versão
 
 | Versão | Data       | Data de Revisão          | Descrição            | Autor(es)                       | Revisor(es)                       | Detalhes da revisão        |
 | ------ | ---------- | ------------------------ | -------------------- | ------------------------------- | --------------------------------- | -------------------------- |
@@ -100,4 +107,6 @@ O padrão de projeto Prototype é uma solução eficiente e reutilizável para a
 | 1.1    | 02/06/2025 | DD/MM/AAAA               | Atualizando doc| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
 | 1.2    | 02/06/2025 | DD/MM/AAAA               | Inserindo gof prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
+|    |  |              |  |  | |  |
+| 1.3    | 02/06/2025 | DD/MM/AAAA               | Inserindo uml gof prototype| [Amanda Abreu](https://github.com/Amandaaaaabreu) | [Arthur Rodrigues](https://github.com/arthurrsousa)||
 |    |  |              |  |  | |  |
