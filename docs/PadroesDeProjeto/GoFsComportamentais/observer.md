@@ -104,6 +104,42 @@ Permite que componentes React (como Login e PrivateRoute) reajam dinamicamente a
 
 </center>
 
+### 9.3 Lições concluídas - Sebastián Héctor Zuzunaga Rosado
+
+A funcionalidade de conclusão das lições no LessonBox foi implementada com base no padrão Observer, com o objetivo de desacoplar a lógica de atualização de progresso da interface de usuário. Nesse padrão, o LessonBox atua como o Subject (Sujeito), enquanto qualquer função ou componente que deseje reagir a mudanças (como a finalização de uma lição) atua como o Observer (Observador).
+
+<center>
+
+**Figura 01 - Subject**
+
+![Subject](../../assets/subgrupo02/comportamental/themesubject.png)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 02 - Subject específico**
+
+![Subject LBox](../../assets/subgrupo02/comportamental/LBoxSubjectSpecific.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 03 - Observer**
+
+![Observer 1](../../assets/subgrupo02/comportamental/LBoxObserver_1.PNG)
+
+![Observer 2](../../assets/subgrupo02/comportamental/LBoxObserver_2.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 04 - Resultado**
+
+![Resultado](../../assets/subgrupo02/comportamental/observerlistagemLicoes.PNG)
+
+**Figura 05 - Estrutura do Observer**
+
+![Resultado](../../assets/subgrupo02/comportamental/ObserverModelListagemLicoes.PNG)
+
+ </center>
+
 ## 10. Referências Bibliográficas
 
 - Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1995). *Design Patterns: Elements of Reusable Object-Oriented Software*. Addison-Wesley.
