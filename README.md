@@ -95,8 +95,8 @@ Utilizando jogos símples e quizes, além de gráficos amigáveis, o aprendizado
 
 ## Há algo a ser executado?
 
-( ) SIM
+(X ) SIM
 
-(X) NÃO
+() NÃO
 
 
