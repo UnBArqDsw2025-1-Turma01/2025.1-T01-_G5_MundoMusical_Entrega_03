@@ -108,7 +108,7 @@ Permite que componentes React (como Login e PrivateRoute) reajam dinamicamente a
 
 **Figura 03 - Notificação da autenticação**
 
-![Observer 3](../../assets/subgrupo02/comportamental/observer_enrico3.png)
+![Observer 3](../../assets/subgrupo02/comportamental/observer_enrico_login.png)
 
 *Fonte: [Enrico Martins Mantoan Zoratto](https://github.com/sidts)*
 
