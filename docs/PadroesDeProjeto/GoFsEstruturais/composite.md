@@ -83,8 +83,39 @@ A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes 
 
 **Figura 04 - Resultado**
 
-### 9.2 Proximo xxxxx
+### 9.2 Lista de lições - Sebastián Héctor Zuzunaga Rosado
 
+A funcionalidade dos componentes da listagem de lições permitem representar estruturas hierárquicas de lições como se fossem objetos únicos. Cada LessonBox representa uma lição individual com informações como título, capítulo, progresso atual e total de atividades. Já o LessonBoxModule atua como um contêiner composto, capaz de agrupar diversas lições (LessonBox) e calcular o progresso total de forma agregada.
+
+A seguir, são apresentadas as imagens que ilustram a estrutura dos componentes envolvidos, evidenciando a organização modular do sistema.
+
+<center>
+
+**Figura 01 - Lista de lições Component**
+
+![Lista Component](../../assets/subgrupo02/estrutural/LBoxComponent.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 02 - Lista de lições Composite**
+
+![Lista Composite](../../assets/subgrupo02/estrutural/LBoxModule.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 03 - Lista de lições Leaf**
+
+![Lista Leaf](../../assets/subgrupo02/estrutural/LBox.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+**Figura 04 - Resultado**
+
+![Resultado](../../assets/subgrupo02/estrutural/compositelistagemLicoes.PNG)
+
+*Fonte: [Sebastián Zuzunaga](https://github.com/sebazac332)*
+
+</center>
 
 ## 10. Referências Bibliográficas
 
