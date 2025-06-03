@@ -11,6 +11,7 @@
       - [Composite](/PadroesDeProjeto/GoFsEstruturais/composite.md)
     - [3.3. Padrões Comportamentais](/PadroesDeProjeto/GoFsComportamentais/3.3.GoFsComportamentais.md)
       - [Strategy](/PadroesDeProjeto/GoFsComportamentais/strategy.md)
+      - [Observer](/PadroesDeProjeto/GoFsEstruturais/observer.md)
     - [3.4. Participações em Padroes](/PadroesDeProjeto/3.4.ParticipacoesPadroes.md)
     - [3.5. Iniciativas Extras](/PadroesDeProjeto/3.5.IniciativasExtras/3.5.IniciativasExtras.md)
       - [3.5.1 Metodologia](/PadroesDeProjeto/3.5.IniciativasExtras/metodologia.md)
